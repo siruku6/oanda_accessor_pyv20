@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+oandapyv20 = "==0.7.2"
+pandas = "==1.4.3"
+
+[dev-packages]
+pytest = "==7.2.0"
+responses = "==0.22.0"
+
+[requires]
+python_version = "3.9"
