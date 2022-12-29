@@ -159,7 +159,7 @@ class OandaClient:
 
         order_transaction: Dict[str, Any] = response["orderCreateTransaction"]
         if order_transaction == {}:
-            return {"messsage": "Market order is failed.", "result": response}
+            return {"message": "Market order is failed.", "result": response}
 
         response_for_display = {
             "instrument": order_transaction.get("instrument"),
@@ -170,7 +170,7 @@ class OandaClient:
         }
 
         return {
-            "messsage": "Market order is done !",
+            "message": "Market order is done !",
             "order": response_for_display,
             "response": response,
         }

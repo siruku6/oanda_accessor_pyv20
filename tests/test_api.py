@@ -82,8 +82,9 @@ class TestRequestMarketOrdering:
     @pytest.fixture(name="market_order_response_for_display")
     def fixture_market_order_response(self, dummy_market_order_response):
         return {
-            "messsage": "Market order is done !",
+            "message": "Market order is done !",
             "order": dummy_market_order_response["orderCreateTransaction"],
+            "response": dummy_market_order_response,
         }
 
     def test_positive_market_order(
@@ -114,7 +115,7 @@ class TestRequestMarketOrdering:
         error_response = {"orderCreateTransaction": {}}
         with patch("oandapyV20.API.request", return_value=error_response):
             response = client.request_market_ordering("", dummy_stoploss_price)
-            assert response == {"messsage": "Market order is failed.", "result": error_response}
+            assert response == {"message": "Market order is failed.", "result": error_response}
 
     def test_market_order_args(
         self,
@@ -203,9 +204,9 @@ class TestRequestClosing:
             trade_id=dummy_trade_id, reason="test"
         )
         assert res == {
-            "[Client] message": "Position is closed",
+            "message": "[Client] Position is closed",
             "reason": "test",
-            "result": dummy_closing_result,
+            "response": dummy_closing_result,
         }
 
 
