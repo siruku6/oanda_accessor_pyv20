@@ -10,6 +10,12 @@ pandas = "==1.4.3"
 [dev-packages]
 pytest = "==7.2.0"
 responses = "==0.22.0"
+flake8 = "*"
+mypy = "*"
+types-requests = "*"
+isort = "*"
+black = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.9"
