@@ -1,4 +1,11 @@
 # oanda_accessor_pyv20
+
+[![Python application](https://github.com/siruku6/oanda_accessor_pyv20/actions/workflows/ci.yml/badge.svg)](https://github.com/siruku6/oanda_accessor_pyv20/actions/workflows/ci.yml)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/d7eb136487450605bd70/maintainability)](https://codeclimate.com/github/siruku6/oanda_accessor_pyv20/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d7eb136487450605bd70/test_coverage)](https://codeclimate.com/github/siruku6/oanda_accessor_pyv20/test_coverage)
+
 This app lets you easily load candle data of Foreign Currency from Oanda API.
 
 ## Dependencies
