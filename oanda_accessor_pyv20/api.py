@@ -117,7 +117,6 @@ class OandaClient:
             )
         ]
 
-        print("[Client] There is open position: {}".format(extracted_trades != []))
         return {
             "positions": extracted_trades,
             "last_transaction_id": response["lastTransactionID"],
